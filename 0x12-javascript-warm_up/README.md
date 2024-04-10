@@ -92,8 +92,3 @@ What you should learn from this project:
 
 ### [17. Increment object](./103-object_fct.js)
 * Update this script by adding a new function incr that increments the integer value.
-
----
-
-##Author
-Michael N Mwanza
