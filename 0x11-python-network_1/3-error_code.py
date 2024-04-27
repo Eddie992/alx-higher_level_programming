@@ -9,12 +9,12 @@ import sys
 import urllib.parse
 import urllib.request
 
-
 if __name__ == "__main__":
-    url = sys.argv[1]
-    value = {"email": sys.argv[2]}
-    data = urllib.parse.urlencode(value).encode("ascii")
+    import sys
+    from urllib import request, error
 
-    request = urllib.request.Request(url, data)
-    with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8"))
+    try:
+        with request.urlopen(sys.argv[1]) as res:
+            print(res.read().decode('UTF-8'))
+    except error.HTTPError as er:
+        print('Error code:', er.code)
