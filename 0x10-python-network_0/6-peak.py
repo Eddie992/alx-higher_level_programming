@@ -2,7 +2,8 @@
 
 
 def find_peak(list_of_integers):
-    """Find a peak in a list of integers.
+    """
+    Find a peak in a list of integers.
 
     Example:
         [1, 2, 4, 6, 3] -> 6
