@@ -18,5 +18,5 @@ if __name__ == "__main__":
                 'name')))
         else:
             print("No result")
-    except:
+    except Not a valid JSON:
         print("Not a valid JSON")
